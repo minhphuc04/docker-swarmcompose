@@ -1149,4 +1149,3 @@ Mục tiêu cuối cùng của lab:
              Self-healing
 ```
 
-Bạn có thể copy nguyên khối này vào `README.md` rồi commit lên Git. Mình đã sắp xếp theo hướng **học → triển khai → test → rút ra sự khác nhau**, nên sau này mở repo ra nhìn lại sẽ dễ nhớ hơn.
