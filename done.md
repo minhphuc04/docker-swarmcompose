@@ -19,31 +19,38 @@
 | **Phù hợp**           | Dev, test, app nhỏ, single server        | Multi-node deployment, orchestration                       |
 | **Quản lý**           | `docker compose`                         | `docker service`, `docker node`, `docker stack`            |
 
-Test 1 – Self-Healing & Failover
+---
 
-4 replicas
-    ↓
-2 node
-    ↓
-Worker bị down
-    ↓
-Manager phát hiện
-    ↓
-Task trên Worker bị Shutdown
-    ↓
-Manager tạo Task mới
-    ↓
+## Test 1 – Self-Healing & Failover
+
+4 replicas  
+↓  
+2 node  
+↓  
+Worker bị down  
+↓  
+Manager phát hiện  
+↓  
+Task trên Worker bị Shutdown  
+↓  
+Manager tạo Task mới  
+↓  
 Service quay về desired state = 4 replicas
-<img width="1857" height="869" alt="ảnh" src="https://github.com/user-attachments/assets/1258b726-8367-4373-8dad-22ae1344d4cc" />
-Test 2: Load Balancing giữa các Replicas
-4 replicas
-    ↓
-Client gửi request
-    ↓
-Swarm Routing Mesh
-    ↓
-Phân phối request
-    ↓
-Replica 1 → Replica 2 → Replica 3 → Replica 4...
-<img width="935" height="912" alt="ảnh" src="https://github.com/user-attachments/assets/22df3e92-49d9-48df-a6f7-c98cc42805a3" />
 
+<img width="1857" height="869" alt="ảnh" src="https://github.com/user-attachments/assets/1258b726-8367-4373-8dad-22ae1344d4cc" />
+
+---
+
+## Test 2 – Load Balancing giữa các Replicas
+
+4 replicas  
+↓  
+Client gửi request  
+↓  
+Swarm Routing Mesh  
+↓  
+Phân phối request  
+↓  
+Replica 1 → Replica 2 → Replica 3 → Replica 4...
+
+<img width="935" height="912" alt="ảnh" src="https://github.com/user-attachments/assets/22df3e92-49d9-48df-a6f7-c98cc42805a3" />
