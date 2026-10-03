@@ -1,11 +1,4 @@
-Được bạn. Mình viết thành một file Markdown hoàn chỉnh, theo kiểu **tài liệu lab cá nhân để commit lên Git**, có cả lý thuyết + mục tiêu + kiến trúc + các bước triển khai + phần kiểm tra và so sánh.
 
-Bạn có thể lưu thành:
-
-```text
-docker-swarm-lab/
-└── README.md
-```
 
 # Docker Compose vs Docker Swarm — Lab 2 VPS
 
